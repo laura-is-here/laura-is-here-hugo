@@ -1,0 +1,31 @@
+{{ define "main" }}
+<div class="grid-container">
+    <div class="grid-item grid-item-main">
+        <div class="container-inner">
+            <h1>latest <span class="border-bottom-ain">posts</span></h1>
+            <ul class="list-group   stack">
+                {{ range .Pages.ByPublishDate.Reverse }}
+                <li>
+                    <h2>
+                        <a href="{{ .RelPermalink }}" class="header-link">
+                            {{ .Title | markdownify }}
+                        </a>
+                    </h2>
+                    <p class="bg-main">
+                        <em>
+                            <small>posted on </small>
+                            <strong>{{ .Date.Format "January 2, 2006" }}</strong>
+                            <small>by</small>
+                            <strong>{{ .Page.Params.author }}</strong>
+                        </em>
+                    </p>
+                    {{ .Summary | markdownify }}
+                    <a href="{{ .RelPermalink }}" class="anchor">read more</a>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+    </div>
+    {{ partial "sidebar.html" . }}
+</div>
+{{ end }}

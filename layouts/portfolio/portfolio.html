@@ -1,0 +1,33 @@
+{{ define "main" }}
+<section class="grid-container">
+    <div class="grid-item grid-item-main">
+        <div class="container-inner">
+            <h1 class="h1">portfolio</h1>
+            <p>
+                view some of my published projects
+            </p>
+            <ul class="list-group    stack">
+                {{ range .Pages }}
+                <li class="">
+                    <h2 class="h2">
+                        <a href="{{ .Params.link }}" class="header-link" rel="noreferrer" target="_blank">
+                            <i class="fas fa-arrow-right"></i>
+                            {{ .Title }}
+                        </a>
+                    </h2>
+                    <figure class="">
+                        <a href="{{ .Params.link }}" class="" rel="noreferrer" target="_blank">
+                            <img src="{{ .Params.image.source }}" alt="{{ .Params.image.alt }}" class="card" width="100%">
+                        </a>
+                        <figcatpion>
+                            {{ .Summary }}
+                        </figcatpion>
+                    </figure>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+    </div>
+    {{ partial "sidebar.html" . }}
+</div>
+{{ end }}

@@ -1,0 +1,25 @@
+baseURL = "https://laura-is-here.github.io"
+languageCode = "en-us"
+title = "Laura is Here"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Portfolio"
+    url = "/portfolio/"
+    weight = 2
+  [[menu.main]]
+    name = "Blog"
+    url = "/posts/"
+    weight = 3
+    
+[params]
+  description = "I am a queer and trans freelance web developer specializing in static sites."
+  images = ["/assets/images/blue_pink_gradient.svg"]
+  [[projects]]
+      name = "Tiffany Hooton Therapy"
+      link = "https://tiffanyhootontherapy.neocities.org"
+      description = "the website for tiffany hooton's queer and gender affirming therapy practice in long beach"

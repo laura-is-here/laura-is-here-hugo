@@ -1,0 +1,17 @@
+<head>
+    {{ $title := print .Title " | " .Site.Title }}
+    {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
+    <title>{{ $title }}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="I am a queer and trans freelance web developer specializing in static sites.">
+    {{ $sass := resources.Get "/css/main.scss" }}
+    {{ $style := $sass | toCSS | postCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC|Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    
+    {{ template "_internal/opengraph.html" . }}
+    <link href="/assets/images/logo.png" rel="shortcut icon" type="image/ico">
+    <link href="https://laura-is-here.github.io" rel="canonical">
+     <script src="https://kit.fontawesome.com/ee98754881.js" crossorigin="anonymous" defer></script>
+</head>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+    {{ partial "head.html" . }}
+    <body>
+        {{ partial "header.html" . }}
+        <main class="container">
+            {{ block "main" . }}{{ end }}
+        </main>
+        {{ partial "footer.html" . }}
+        <!--Font Awesome SVGs-->
+        <!--Site scripts-->
+        <script src="/assets/js/script.js"></script>
+    </body>
+</html>

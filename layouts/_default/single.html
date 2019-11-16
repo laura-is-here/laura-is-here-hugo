@@ -1,0 +1,30 @@
+{{ define "main" }}
+<div class="grid-container">
+    <div class="grid-item grid-item-main">
+        <div class="container-inner">
+            <h1>
+                {{ .Title }}
+            </h1>
+            <hr>
+            <p class="bg-main">
+                <em>
+                    <small>posted on </small>
+                    <strong>{{ .Date.Format "January 2, 2006" }}</strong>
+                    <small>by</small>
+                    <strong>{{ .Page.Params.author }}</strong>
+                </em>
+                <br>
+                <br>
+                <a href="/posts/" class="anchor">back to latest posts</a> | <a href="/" class="anchor">back home</a>
+            </p>
+            <hr>
+            {{ .Content | markdownify }}
+            <hr>
+            <p class="bg-main">
+                <a href="/posts/" class="anchor">back to latest posts</a> | <a href="/" class="anchor">back home</a>
+            </p>
+        </div>
+    </div>
+    {{ partial "sidebar.html" . }}
+</div>
+{{ end }}
