@@ -10,4 +10,4 @@ steve and catherine hanna askin's website for small world travel africa, a servi
 
 built with:
 
-{{< anchor "hugo" "https://gohugo.io" >}} | {{< anchor "scss" "https://sass-lang.com" | {{< anchor "normalize.css" "https://necolas.github.io/normalize.css" >}} | {{< anchor "PostCSS" "https://postcss.org" >}}  & {{< anchor "autoprefixer" "https://autoprefixer.github.io" >}}
+{{< anchor "hugo" "https://gohugo.io" >}} | {{< anchor "scss" "https://sass-lang.com" >}} | {{< anchor "normalize.css" "https://necolas.github.io/normalize.css" >}} | {{< anchor "PostCSS" "https://postcss.org" >}}  & {{< anchor "autoprefixer" "https://autoprefixer.github.io" >}}
