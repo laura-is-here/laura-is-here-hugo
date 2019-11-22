@@ -1,0 +1,20 @@
+---
+label: Portfolio Item
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: field_group
+  name: image
+  label: image
+  fields:
+  - type: file
+    name: source
+    label: source
+  - type: text
+    name: alt
+    label: alt
+- type: text
+  name: link
+  label: link
