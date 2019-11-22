@@ -3,7 +3,7 @@ link = "https://smallworldtravelafrica.org"
 title = "Small World Travel Africa"
 [image]
 alt = "a screenshot of the website for Small World Travel Africa"
-source = "/assets/images/uploads/Screenshot_2019-11-22 Small World Travel Africa Small World Travel Africa.png"
+source = "assets/images/uploads/Screenshot_2019-11-22 Small World Travel Africa Small World Travel Africa.png"
 
 +++
 steve and catherine hanna askin's website for small world travel africa, a service offering cultural learning and travel experiences in southern africa
