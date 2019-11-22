@@ -1,5 +1,5 @@
 +++
-link = ""
+link = "https://smallworldtravelafrica.org"
 title = "Small World Travel Africa"
 [image]
 alt = "a screenshot of the website for Small World Travel Africa"
