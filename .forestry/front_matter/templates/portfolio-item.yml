@@ -19,4 +19,5 @@ fields:
   name: link
   label: link
 pages:
+- content/portfolio/stefan-bc-at-law.md
 - content/portfolio/small-world-travel-africa.md
