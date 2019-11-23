@@ -1,5 +1,4 @@
 +++
-draft = true
 link = "https://stefanbc.com"
 title = "Stefan BC at Law"
 [image]
