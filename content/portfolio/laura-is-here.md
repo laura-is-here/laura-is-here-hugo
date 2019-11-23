@@ -4,6 +4,7 @@ image:
     source: "/assets/images/laura-is-here.png"
     alt: "A screenshot of the home page of this site"
 link: "https://laura-is-here.github.io/"
+draft: true
 ---
 this website!
 
