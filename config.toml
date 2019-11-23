@@ -18,8 +18,4 @@ title = "Laura is Here"
     
 [params]
   description = "I am a queer and trans freelance web developer specializing in static sites."
-  images = ["/assets/images/blue_pink_gradient.svg"]
-  [[projects]]
-      name = "Tiffany Hooton Therapy"
-      link = "https://tiffanyhootontherapy.neocities.org"
-      description = "the website for tiffany hooton's queer and gender affirming therapy practice in long beach"
+  images = ["/assets/images/blue_pink_gradient.svg", "/assets/images/laura-is-here.png"]

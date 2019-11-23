@@ -14,12 +14,8 @@
                         <textarea id="message" name="message" placeholder="your message" rows="6" required class="form-control"></textarea>
                         <input type="submit" value="Send Message" class="form-control">
                     </form>
-                    <ul class="fa-ul">
-                        <li>
-                        </li>
-                    </ul>
                     <h1><span class="border-bottom">navigation</span></h1>
-                    <ul class="">
+                    <ul class="list-group">
                         {{ range .Site.Menus.main }}
                         <li>
                             <a href="{{ .URL }}" class="anchor">

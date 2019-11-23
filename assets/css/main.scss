@@ -158,6 +158,28 @@ h4, .h4 {
   }
 }
 
+.anchor--button {
+  display: inline-block;
+  color: var(--main-font-color);
+  border: 4px solid var(--main-font-color);
+  padding: 0.5rem 0.75rem;
+  margin: 0.25rem 0;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+
+  &:visited {
+    color: var(--main-font-color);
+  }
+
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: var(--main-color);
+    color: var(--main-bg);
+  }
+}
+
 .header-link {
   display: block;
   color: var(--main-font-color);

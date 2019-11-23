@@ -4,7 +4,7 @@
     <title>{{ $title }}</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="I am a queer and trans freelance web developer specializing in static sites.">
+    <meta name="description" content="I am a freelance web developer specializing in accessible, fast, and mobile-friendly sites.">
     {{ $sass := resources.Get "/css/main.scss" }}
     {{ $style := $sass | toCSS | postCSS | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
