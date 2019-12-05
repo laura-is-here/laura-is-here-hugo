@@ -7,10 +7,10 @@ image:
 date: 2019-11-21
 ---
 
-steve and catherine hanna askin's website for small world travel africa, a service offering cultural learning and travel experiences in southern africa
+Steve and Catherine Hanna Askin's website for Small World Travel Africa, a service offering cultural learning and travel experiences in southern Africa.
 
-built with:
+Built with:
 
-{{< anchor "hugo" "https://gohugo.io" >}} | {{< anchor "scss" "https://sass-lang.com" >}} | {{< anchor "normalize.css" "https://necolas.github.io/normalize.css" >}} | {{< anchor "PostCSS" "https://postcss.org" >}}  & {{< anchor "autoprefixer" "https://autoprefixer.github.io" >}}
+{{< anchor "Hugo" "https://gohugo.io" >}} | {{< anchor "SCSS" "https://sass-lang.com" >}} | {{< anchor "Normalize.css" "https://necolas.github.io/normalize.css" >}} | {{< anchor "PostCSS" "https://postcss.org" >}}  & {{< anchor "Autoprefixer" "https://autoprefixer.github.io" >}}
 
 <!--more-->

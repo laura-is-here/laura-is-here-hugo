@@ -8,15 +8,59 @@
 /*--------------------------------- $GENERAL */
 
 :root {
-  --main-color: hsla(196, 65%, 66%, 100%);
-  --main-color-muted: hsla(196, 65%, 35%, 100%);
-  --main-color-bright: hsla(196, 66%, 75%, 100%);
-  --accent-color: hsla(320, 60%, 70%, 100%);
-  --accent-bg: hsla(196, 14%, 15%, 100%);
-  --main-bg: hsla(196, 2%, 94%, 100%);
-  --main-bg-muted: hsla(196, 2%, 88%, 100%);
-  --main-font-color: hsla(240, 15%, 30%, 100%);
-  --slate: hsla(240, 30%, 90%, 100%);
+  --blue-100: hsla(196, 65%, 15%, 100%);
+  --blue-200: hsla(196, 65%, 25%, 100%);
+  --blue-300: hsla(196, 65%, 35%, 100%);
+  --blue-400: hsla(196, 65%, 45%, 100%);
+  --blue-500: hsla(196, 65%, 55%, 100%);
+  --blue-600: hsla(196, 65%, 65%, 100%);
+  --blue-700: hsla(196, 66%, 75%, 100%);
+  --blue-800: hsla(196, 65%, 85%, 100%);
+  --blue-900: hsla(196, 65%, 95%, 100%);
+  --pink-100: hsla(320, 60%, 10%, 100%);
+  --pink-200: hsla(320, 60%, 20%, 100%);
+  --pink-300: hsla(320, 60%, 30%, 100%);
+  --pink-400: hsla(320, 60%, 40%, 100%);
+  --pink-500: hsla(320, 60%, 50%, 100%);
+  --pink-600: hsla(320, 60%, 60%, 100%);
+  --pink-700: hsla(320, 60%, 70%, 100%);
+  --pink-800: hsla(320, 60%, 80%, 100%);
+  --pink-900: hsla(320, 60%, 90%, 100%);
+  --light-100: hsla(196, 2%, 72%, 100%);
+  --light-200: hsla(196, 2%, 75%, 100%);
+  --light-300: hsla(196, 2%, 77%, 100%);
+  --light-400: hsla(196, 2%, 80%, 100%);
+  --light-500: hsla(196, 2%, 82%, 100%);
+  --light-600: hsla(196, 2%, 87%, 100%);
+  --light-700: hsla(196, 2%, 90%, 100%);
+  --light-800: hsla(196, 2%, 92%, 100%);
+  --light-900: hsla(196, 2%, 95%, 100%);
+  --dark-100: hsla(240, 15%, 15%, 100%);
+  --dark-200: hsla(240, 15%, 17%, 100%);
+  --dark-300: hsla(240, 15%, 20%, 100%);
+  --dark-400: hsla(240, 15%, 23%, 100%);
+  --dark-500: hsla(240, 15%, 25%, 100%);
+  --dark-600: hsla(240, 15%, 27%, 100%);
+  --dark-700: hsla(240, 15%, 30%, 100%);
+  --dark-800: hsla(240, 15%, 32%, 100%);
+  --dark-900: hsla(240, 15%, 35%, 100%);
+  --slate-100: hsla(240, 30%, 30%, 100%);
+  --slate-200: hsla(240, 30%, 35%, 100%);
+  --slate-300: hsla(240, 30%, 40%, 100%);
+  --slate-400: hsla(240, 30%, 45%, 100%);
+  --slate-500: hsla(240, 30%, 50%, 100%);
+  --slate-600: hsla(240, 30%, 55%, 100%);
+  --slate-700: hsla(240, 30%, 60%, 100%);
+  --slate-800: hsla(240, 30%, 65%, 100%);
+  --slate-900: hsla(240, 30%, 70%, 100%);
+  --theme-color: var(--blue-600);
+  --theme-color-muted: var(--blue-300);
+  --accent-color: var(--pink-600);
+  --accent-color-muted: var(--pink-300);
+  --background-color: var(--light-800);
+  --font-color: var(--dark-600);
+  --font-color-muted: var(--dark-900); 
+  --slate: var(--slate-900);
   --switch-width: 64px;
   --switch-height: 32px;
   --switch-padding: 3px;
@@ -24,14 +68,59 @@
 }
 
 [data-theme="dark"] {
-  --main-color: hsla(250, 64%, 63%, 100%);
-  --main-color-muted: hsla(250, 63%, 80%, 100%);
-  --main-color-bright: hsla(250, 63%, 80%, 100%);
-  --accent-color: hsla(330, 77%, 53%, 100%);
-  --main-bg: hsla(250, 15%, 20%, 100%);
-  --main-font-color: hsla(250, 2%, 84%, 100%);
-  --accent-bg: #ccd;
-  --slate: hsla(240, 15%, 40%, 100%);
+  --purple-100: hsla(250, 64%, 13%, 100%);
+  --purple-200: hsla(250, 64%, 23%, 100%);
+  --purple-300: hsla(250, 64%, 33%, 100%);
+  --purple-400: hsla(250, 64%, 43%, 100%);
+  --purple-500: hsla(250, 64%, 53%, 100%);
+  --purple-600: hsla(250, 64%, 63%, 100%);
+  --purple-700: hsla(250, 64%, 73%, 100%);
+  --purple-800: hsla(250, 64%, 83%, 100%);
+  --purple-900: hsla(250, 64%, 93%, 100%);
+  --pink-100: hsla(330, 77%, 13%, 100%);
+  --pink-200: hsla(330, 77%, 23%, 100%);
+  --pink-300: hsla(330, 77%, 33%, 100%);
+  --pink-400: hsla(330, 77%, 43%, 100%);
+  --pink-500: hsla(330, 77%, 53%, 100%);
+  --pink-600: hsla(330, 77%, 63%, 100%);
+  --pink-700: hsla(330, 77%, 73%, 100%);
+  --pink-900: hsla(330, 77%, 83%, 100%);
+  --pink-900: hsla(330, 77%, 93%, 100%);
+  --light-100: hsla(250, 2%, 72%, 100%);
+  --light-200: hsla(250, 2%, 75%, 100%);
+  --light-300: hsla(250, 2%, 77%, 100%);
+  --light-400: hsla(250, 2%, 80%, 100%);
+  --light-500: hsla(250, 2%, 82%, 100%);
+  --light-600: hsla(250, 2%, 87%, 100%);
+  --light-700: hsla(250, 2%, 90%, 100%);
+  --light-800: hsla(250, 2%, 92%, 100%);
+  --light-900: hsla(250, 2%, 95%, 100%);
+  --dark-100: hsla(250, 15%, 15%, 100%);
+  --dark-200: hsla(250, 15%, 17%, 100%);
+  --dark-300: hsla(250, 15%, 20%, 100%);
+  --dark-400: hsla(250, 15%, 23%, 100%);
+  --dark-500: hsla(250, 15%, 25%, 100%);
+  --dark-600: hsla(250, 15%, 27%, 100%);
+  --dark-700: hsla(250, 15%, 30%, 100%);
+  --dark-800: hsla(250, 15%, 32%, 100%);
+  --dark-900: hsla(250, 15%, 35%, 100%);
+  --slate-100: hsla(240, 30%, 30%, 100%);
+  --slate-200: hsla(240, 30%, 35%, 100%);
+  --slate-300: hsla(240, 30%, 40%, 100%);
+  --slate-400: hsla(240, 30%, 45%, 100%);
+  --slate-500: hsla(240, 30%, 50%, 100%);
+  --slate-600: hsla(240, 30%, 55%, 100%);
+  --slate-700: hsla(240, 30%, 60%, 100%);
+  --slate-800: hsla(240, 30%, 65%, 100%);
+  --slate-900: hsla(240, 30%, 70%, 100%);
+  --theme-color: var(--purple-400);
+  --theme-color-muted: var(--purple-200);
+  --accent-color: var(--pink-400);
+  --accent-color-muted: var(--pink-200);
+  --background-color: var(--dark-100);
+  --font-color: var(--light-800);
+  --font-color-muted: var(--light-500); 
+  --slate: var(--slate-300);
   --switch-width: 64px;
   --switch-height: 32px;
   --switch-padding: 3px;
@@ -54,8 +143,8 @@ body {
   font-family: $main-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
-  color: var(--main-font-color);
-  background-color: var(--main-bg);
+  color: var(--font-color);
+  background-color: var(--background-color);
   font-weight: 400;
   display: flex;
   min-height: 100vh;
@@ -85,7 +174,7 @@ main {
 }
 
 hr {
-  border-bottom: 2px solid var(--main-font-color);
+  border-bottom: 2px solid var(--font-color);
   margin: 3rem 0;
 }
 
@@ -96,7 +185,7 @@ hr {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4 {
-  font-family: "Noto Sans SC", sans-serif;
+  font-family: Gelasio, "Noto Sans SC", sans-serif;
   font-weight: bold;
   line-height: $header-line-height;
   margin: 1.5rem 0 0.75rem;
@@ -113,6 +202,8 @@ h1, h2, h3, h4, h5, h6,
 
 h1, .h1 {
   font-size: 3rem;
+  font-weight: 500;
+  font-family: Comfortaa;
 }
 
 h2, .h2 {
@@ -127,7 +218,7 @@ h4, .h4 {
   font-size: 1.25rem;
 }
 
-.measure--sm > p, h1, h2, h3, h4, h5, h6 {
+.measure--sm > p, h1, h2, h3, h4, h5, h6, ul, li {
   max-width: 45ch;
 }
 
@@ -139,24 +230,29 @@ h4, .h4 {
   max-width: 80ch;
 }
 
+.site-title {
+  font-weight: 1000;
+  font-size: 2rem;
+  font-family: Comfortaa;
+}
 
 /* -------------------------------------- $LINKS */
 
 .anchor {
-  color: var(--main-font-color);
+  color: var(--font-color);
   
   &:hover,
   &:active,
   &:focus {
     color: var(--main-bg);
-    background-color: var(--main-color);
+    background-color: var(--theme-color);
   }
 }
 
 .anchor--button {
   display: inline-block;
-  color: var(--main-font-color);
-  border: 4px solid var(--main-font-color);
+  color: var(--font-color);
+  border: 4px solid var(--font-color);
   padding: 0.5rem 0.75rem;
   margin: 0.25rem 0;
   cursor: pointer;
@@ -164,26 +260,26 @@ h4, .h4 {
   text-decoration: none;
 
   &:visited {
-    color: var(--main-font-color);
+    color: var(--font-color);
   }
 
   &:active,
   &:focus,
   &:hover {
-    background-color: var(--main-color);
+    background-color: var(--theme-color);
     color: var(--main-bg);
   }
 }
 
 .header-link {
   display: block;
-  color: var(--main-font-color);
+  color: var(--font-color);
   position: relative;
   
   &:active,
   &:focus,
   &:hover {
-    color: var(--main-color);
+    color: var(--theme-color);
   }
 }
 
@@ -202,7 +298,7 @@ h4, .h4 {
   height: 125%;
   width: 105%;
   border-radius: 5px;
-  background-color: var(--main-font-color);
+  background-color: var(--font-color);
   background-clip: border-box;
 }
 
@@ -350,7 +446,7 @@ h4, .h4 {
   &:hover,
   &:active,
   &:focus {
-    color: var(--main-color);
+    color: var(--theme-color);
   }
   
   @media #{$mq-small} {
@@ -375,7 +471,7 @@ h4, .h4 {
   width: 40%;
   margin: 0 auto;
   border-radius: 20px;
-  border-top: 5px solid var(--main-color);
+  border-top: 5px solid var(--theme-color);
   opacity: 0.95;
   box-shadow: 1px 4px 5px rgba(0,0,0,0.4);
 }
@@ -392,7 +488,7 @@ h4, .h4 {
 }
 
 .nav-link {
-  color: var(--main-font-color);
+  color: var(--font-color);
   text-decoration: none;
   display: block;
   padding: 0.75rem;
@@ -400,7 +496,8 @@ h4, .h4 {
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   font-weight: bold;
-  border-bottom: 4px solid var(--main-font-color);
+  font-family: Comfortaa, sans-serif;
+  border-bottom: 4px solid var(--font-color);
   
   &:hover,
   &:active {
@@ -438,15 +535,19 @@ footer {
 }
 
 .color-main {
-  color: var(--main-color);
+  color: var(--theme-color);
 }
 
 .color-accent {
   color: var(--accent-color);
 }
 
+.font-color-muted {
+  color: var(--font-color-muted);
+}
+
 .border-bottom {
-  border-bottom: 4px solid var(--main-color);
+  border-bottom: 4px solid var(--theme-color);
 }
 
 .border-bottom-accent {
@@ -454,7 +555,7 @@ footer {
 }
 
 .border-left {
-  border-left: 4px solid var(--main-color);
+  border-left: 4px solid var(--theme-color);
 }
 
 .border-left-sm {
@@ -469,7 +570,7 @@ footer {
 }
 
 .bg-main {
-  background-color: var(--main-color);
+  background-color: var(--theme-color);
 }
 
 .bg-accent {
@@ -477,7 +578,7 @@ footer {
 }
 
 .bg-main-muted {
-  background-color: var(--main-color-muted);
+  background-color: var(--theme-color-muted);
 }
 
 .bg-slate {
@@ -504,6 +605,12 @@ footer {
 .card {
   border-radius: 5px;
   box-shadow: 1px 2px 4px rgba(0,0,0,0.2), 0px 0px 7px rgba(0, 0, 0, 0.2);
+
+  > h1, h2, h3, h4, h5, h6 {
+    &:first-child {
+      margin-top: 1.5rem;
+    }
+  }
 }
 
 .list-group {
@@ -524,8 +631,24 @@ footer {
   box-shadow: 1px 2px 4px rgba(0,0,0,0.2), 0px 0px 7px rgba(0, 0, 0, 0.2);
 }
 
+.margin-top--sm {
+  margin-top: 0.75rem;
+}
+
+.margin-top--lg {
+  margin-top: 3rem;
+}
+
 .padding--sm {
   padding: 0.5rem;
+}
+
+.padding--lg {
+  padding: 1.5rem;
+
+  @media #{$mq-medium} {
+    padding: 3rem;
+  }
 }
 
 /* -------------------------------- 
@@ -568,7 +691,7 @@ Usage: codyhouse.co/license
   pointer-events: none;
   
   &:checked + .switch__label {
-    background-color: var(--main-color);
+    background-color: var(--theme-color);
   }
   
   &:checked + .switch__label + .switch__marker {
@@ -586,7 +709,7 @@ Usage: codyhouse.co/license
   height: 100%;
   color: transparent;
   user-select: none;
-  background-color: var(--main-color);
+  background-color: var(--theme-color);
   border-radius: inherit;
   z-index: 1;
   transition: background var(--switch-animation-duration);
@@ -606,12 +729,12 @@ Usage: codyhouse.co/license
 }
 
 .form-control {
-  color: var(--main-font-color);
+  color: var(--font-color);
   background-color: transparent;
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: 4px solid var(--main-font-color);
+  border-bottom: 4px solid var(--font-color);
   padding: 0.25rem;
   margin: 0.75rem 0;
   width: 100%;
@@ -619,20 +742,20 @@ Usage: codyhouse.co/license
 }
 
 .form-control[type="submit"] {
-  border: 4px solid var(--main-font-color);
+  border: 4px solid var(--font-color);
   padding: 0.75rem;
   cursor: pointer;
   font-weight: bold;
 }
 
 .form-control::placeholder {
-  color: var(--main-font-color); 
+  color: var(--font-color); 
   opacity: 0.7;
 }
 
 .form-control {
   &:hover, &:focus {
-    background-color: var(--main-color);
+    background-color: var(--theme-color);
     color: var(--main-bg);
   }
 }
@@ -650,22 +773,4 @@ Usage: codyhouse.co/license
 
 .stack > * + * {
   margin-top: var(--space);
-}
-
-@media screen and (prefers-color-scheme: dark) {
-  :root {
-    --main-color: #65e;
-    --main-color-muted: #a9f;
-    --main-color-bright: #a9f;
-    --accent-color: #d38;
-    --main-bg: #112;
-    --main-font-color: #eef;
-    --accent-bg: #ccd;
-  }
-  
-  .bg-triangles-grad {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/assets/images/pink_blue_gradient_dark.svg");
-    background-position: center;
-    background-size: cover;
-  }
 }

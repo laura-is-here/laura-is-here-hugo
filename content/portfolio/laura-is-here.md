@@ -7,10 +7,10 @@ link: "https://laura-is-here.github.io/"
 date: 2019-10-25
 draft: true
 ---
-this website!
+This website!
 
-built with:
+Built with:
 
-{{< anchor "hugo" "https://gohugo.io" >}} | {{< anchor "scss" "https://sass-lang.com" >}} | {{< anchor "normalize.css" "https://necolas.github.io/normalize.css/" >}} | {{< anchor "PostCSS" "https://postcss.org" >}} & {{< anchor "Autoprefixer" "https://autoprefixer.github.io" >}} | {{< anchor "type-scale" "https://type-scale.com" >}} 
+{{< anchor "Hugo" "https://gohugo.io" >}} | {{< anchor "SCSS" "https://sass-lang.com" >}} | {{< anchor "Normalize.css" "https://necolas.github.io/normalize.css/" >}} | {{< anchor "PostCSS" "https://postcss.org" >}} & {{< anchor "Autoprefixer" "https://autoprefixer.github.io" >}} | {{< anchor "Type-scale" "https://type-scale.com" >}} 
 
 <!--more-->

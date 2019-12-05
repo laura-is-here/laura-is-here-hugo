@@ -6,10 +6,10 @@ image:
 link: "https://anarchistlb.org/"
 date: 2019-10-15
 ---
-the website for long beach anarchist collective
+The website for Long Beach Anarchist Collective
 
-built with:
+Built with:
 
-{{< anchor "hugo" "https://gohugo.io" >}} | {{< anchor "scss" "https://sass-lang.com" >}} | {{< anchor "normalize.css" "https://necolas.github.io/normalize.css/" >}} | {{< anchor "PostCSS" "https://postcss.org" >}} & {{< anchor "Autoprefixer" "https://autoprefixer.github.io" >}} 
+{{< anchor "Hugo" "https://gohugo.io" >}} | {{< anchor "SCSS" "https://sass-lang.com" >}} | {{< anchor "Normalize.css" "https://necolas.github.io/normalize.css/" >}} | {{< anchor "PostCSS" "https://postcss.org" >}} & {{< anchor "Autoprefixer" "https://autoprefixer.github.io" >}} 
 
 <!--more-->

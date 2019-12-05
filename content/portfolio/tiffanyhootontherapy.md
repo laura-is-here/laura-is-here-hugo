@@ -6,10 +6,10 @@ image:
 link: "https://tiffanyhootontherapy.neocities.org/"
 date: 2019-10-31
 ---
-the website for tiffany hooton's queer and gender affirming therapy practice 
+The website for Tiffany Hooton's queer and gender affirming therapy practice.
 
-built with:
+Built with:
 
-{{< anchor "jekyll" "https://jekyllrb.com" >}} | {{< anchor "scss" "https://sass-lang.com" >}} | {{< anchor "normalize.css" "https://necolas.github.io/normalize.css/" >}} | {{< anchor "PostCSS" "https://postcss.org" >}} & {{< anchor "Autoprefixer" "https://autoprefixer.github.io" >}} 
+{{< anchor "Jekyll" "https://jekyllrb.com" >}} | {{< anchor "SCSS" "https://sass-lang.com" >}} | {{< anchor "Normalize.css" "https://necolas.github.io/normalize.css/" >}} | {{< anchor "PostCSS" "https://postcss.org" >}} & {{< anchor "Autoprefixer" "https://autoprefixer.github.io" >}} 
 
 <!--more-->

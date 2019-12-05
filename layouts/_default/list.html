@@ -2,16 +2,16 @@
 <div class="">
     <div class="">
         <div class="container">
-            <h1>latest <span class="border-bottom-ain">posts</span></h1>
+            <h1>Latest <span class="border-bottom-ain">posts</span></h1>
             <ul class="list-group   stack">
                 {{ range .Pages.ByPublishDate.Reverse }}
                 <li class="measure--md">
                     <h2>
-                        <a href="{{ .RelPermalink }}" class="header-link">
+                        <a href="{{ .RelPermalink }}" class="anchor">
                             {{ .Title | markdownify }}
                         </a>
                     </h2>
-                    <p class="bg-main">
+                    <p class="font-color-muted    margin-top--sm">
                         <em>
                             <small>posted on </small>
                             <strong>{{ .Date.Format "January 2, 2006" }}</strong>
@@ -20,7 +20,7 @@
                         </em>
                     </p>
                     {{ .Summary | markdownify }}
-                    <a href="{{ .RelPermalink }}" class="anchor">read more</a>
+                    <a href="{{ .RelPermalink }}" class="anchor--button">Read more</a>
                 </li>
                 {{ end }}
             </ul>
