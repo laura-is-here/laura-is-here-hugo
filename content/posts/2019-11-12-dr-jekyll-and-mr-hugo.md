@@ -35,4 +35,4 @@ as a workaround I began using make to set up the development environment and get
 
 however, as this development environment got more complex, I began running into problems with build speeds. Jekyll slowed down just a little bit, taking anywhere between 5 - 7 seconds to regenerate the live preview in the browser. while not a _long_ time, the extended periods waiting to click refresh in the browser after every save add up and, again, introduce more frustration to developing.
 
-## ugo: something faster
+## hugo: something faster
