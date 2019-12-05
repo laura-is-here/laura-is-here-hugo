@@ -26,3 +26,13 @@ jekyll presented several immediate advantages to my work flow and build process:
 * integration with sass/SCSS
 
 i transitioned an early version of this site, as well as tiffanyhootontherapy.neocities.org, to use Jekyll before starting a more full-flegded blog for anarchistlb.org. the results, both in terms of development workflow and the final product, were huge improvements to the truly barebones HTML and CSS that I had worked with before.
+
+### cons of Jekyll
+
+Jekyll was not without some cons. as i started delving into the world of npm and node more, I found that managing node modules alongside ruby was a tad tedious for someone of my skill level, and getting things as sime as autoprefixer and postcss set up within ruby and Jekyll was less than intuitive and frustrating due to lack of good documentation and unmaintained packages.
+
+as a workaround I began using make to set up the development environment and get the best out of npm and ruby based tools.
+
+however, as this development environment got more complex, I began running into problems with build speeds. Jekyll slowed down just a little bit, taking anywhere between 5 - 7 seconds to regenerate the live preview in the browser. while not a _long_ time, the extended periods waiting to click refresh in the browser after every save add up and, again, introduce more frustration to developing.
+
+## ugo: something faster
