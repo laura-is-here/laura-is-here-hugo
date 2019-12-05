@@ -25,4 +25,4 @@ jekyll presented several immediate advantages to my work flow and build process:
 * the ability to use "includes" to easily recycle components like menus, headers, etc.
 * integration with sass/SCSS
 
-i transitioned an early version of this site, as well as tiffanyhootontherapy.neocities.org, to 
+i transitioned an early version of this site, as well as tiffanyhootontherapy.neocities.org, to use Jekyll before starting a more full-flegded blog for anarchistlb.org. the results, both in terms of development workflow and the final product, were huge improvements to the truly barebones HTML and CSS that I had worked with before.
