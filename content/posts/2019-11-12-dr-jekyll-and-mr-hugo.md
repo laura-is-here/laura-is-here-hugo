@@ -24,3 +24,5 @@ jekyll presented several immediate advantages to my work flow and build process:
 * live rendering of the site on a local server
 * the ability to use "includes" to easily recycle components like menus, headers, etc.
 * integration with sass/SCSS
+
+i transitioned an early version of this site, as well as tiffanyhootontherapy.neocities.org, to 
