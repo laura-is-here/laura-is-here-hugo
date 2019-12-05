@@ -4,6 +4,7 @@ image:
     source: "/assets/images/lbac.jpg"
     alt: "A screenshot of the home page of the Long Beach Anarchist Collective website"
 link: "https://anarchistlb.org/"
+date: 2019-10-15
 ---
 the website for long beach anarchist collective
 

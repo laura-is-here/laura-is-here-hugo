@@ -1,49 +1,107 @@
 {{ define "main" }}
-<section class="grid-container">
-    <div class="grid-item grid-item-main">
-        <div class="container-inner">
-            <h1 class="h1">
-                hello world!
-            </h1>
-            <p>
-                i am a freelance web designer and developer specializing in fast, accessible, and mobile-friendly websites.
-            </p>
-            <p>
-                I am currently available to work on new projects. <a href="#contact" class="anchor">Contact me</a> and let's work together.
-            </p>
-            <h2 class="h2">about me</h2>
-            <p>
-                i began developing the web during an undergraduate class on human factors.
-            </p>
-            <p>
-                this class taught me the basics of html & css and, more importantly, stressed the need for accessible, semantic websites for users, clients, and developers.
-            </p>
-            <p>
-                i am queer and trans and love working with other queer and trans folks, as well as poc, sex workers, and activists.
-            </p>
-            <h2 class="h2">my skills</h2>
-            <p>
-                i am familiar with
-            </p>
-            <ul class="">
-                <li class="">advanced html & css/scss</li>
-                <li class="">static site generators & build tools such as:</li>
-                <ul>
-                    <li>jekyll</li>
-                    <li>hugo</li>
-                    <li>grunt & gulp</li>
-                </ul>
-                <li class="">crafting low-level content including:</li>
-                <ul>
-                    <li>copy writing</li>
-                    <li>basic graphic & logo design</li>
-                    <li>color-schemes & typography</li>
-                </ul>
-                <li class="">vanilla javascript as required</li>
-            </ul>
-            <p>
-                please <a href="#contact" class="anchor">contact me</a> if you'd like to work together on a project.
-            </p>
+<section class="">
+    <div class="">
+        <div class="container">
+            <div class="measure--md">
+                <h1>
+                    hello world!
+                </h1>
+                <p>
+                    i am a freelance web designer and developer specializing in fast, accessible, and mobile-friendly websites.
+                </p>
+                <p>
+                    i am currently available to work on new projects. <a href="#contact" class="anchor">contact me</a> if you have a project you'd like to hire me for.
+                </p>
+            </div>
+            <div class="measure--md">
+                <h1>
+                    latest projects
+                </h1>
+                <div class="flex-container">
+                    {{ range first 2 (where .Pages "Section" "portfolio").ByDate.Reverse }}
+                    <div class="flex-item   measure--sm">
+                        <h3 class="">
+                            <a href="{{ .Params.link }}" class="anchor" rel="noreferrer" target="_blank">
+                                {{ .Title }}
+                            </a>
+                        </h3>
+                        <figure class="">
+                            <a href="{{ .Params.link }}" class="" rel="noreferrer" target="_blank">
+                                <img src="{{ .Params.image.source }}" alt="{{ .Params.image.alt }}" class="card" width="100%">
+                            </a>
+                            <figcatpion>
+                                {{ .Summary }}
+                            </figcatpion>
+                        </figure>
+                    </div>
+                    {{ end }}
+                </div>
+                <a href="/portfolio/" class="anchor--button">see my full portfolio</a>
+            </div>
+            <div>
+                <h1>latest posts</h1>
+                <div class="flex-container">
+                    {{ range first 2 (where .Pages "Section" "posts").ByPublishDate.Reverse }}
+                    <div class="flex-item   measure--sm">
+                        <h3>
+                            <a href="{{ .RelPermalink }}" class="anchor">
+                                {{ .Title | markdownify }}
+                            </a>
+                        </h3>
+                        <p class="bg-main">
+                            <em>
+                                <small>posted on </small>
+                                <strong>{{ .Date.Format "January 2, 2006" }}</strong>
+                                <small>by</small>
+                                <strong>{{ .Page.Params.author }}</strong>
+                            </em>
+                        </p>
+                        {{ .Summary | markdownify }}
+                        <a href="{{ .RelPermalink }}" class="anchor">read more</a>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="flex-item   measure--md">
+                    <h1 class="h1">about me</h1>
+                    <p>
+                        i began developing the web during an undergraduate class on human factors.
+                    </p>
+                    <p>
+                        this class taught me the basics of html & css and, more importantly, stressed the need for accessible, semantic websites for users, clients, and developers.
+                    </p>
+                    <p>
+                        i am queer and trans and love working with other queer and trans folks, as well as poc, sex workers, and activists.
+                    </p>
+                    <h2 class="h2">my skills</h2>
+                    <p>
+                        i am familiar with
+                    </p>
+                    <ul class="">
+                        <li class="">advanced html & css/scss</li>
+                        <li class="">static site generators & build tools such as:</li>
+                        <ul>
+                            <li>jekyll</li>
+                            <li>hugo</li>
+                            <li>grunt & gulp</li>
+                        </ul>
+                        <li class="">crafting low-level content including:</li>
+                        <ul>
+                            <li>copy writing</li>
+                            <li>basic graphic & logo design</li>
+                            <li>color-schemes & typography</li>
+                        </ul>
+                        <li class="">vanilla javascript as required</li>
+                    </ul>
+                    <p>
+                        please <a href="#contact" class="anchor">contact me</a> if you'd like to work together on a project.
+                    </p>
+                </div>
+                <figure class="flex-item--center">
+                    <img src="/assets/images/head-shot.jpeg" class="thumb" width="200px">
+                </figure>
+            </div>
         </div>
     </div>
     {{ partial "sidebar.html" . }}

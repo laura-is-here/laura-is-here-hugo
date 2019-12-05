@@ -1,29 +1,28 @@
 {{ define "main" }}
-<section class="grid-container">
-    <div class="grid-item grid-item-main">
-        <div class="container-inner">
+<section class="">
+    <div class="">
+        <div class="container">
             <h1 class="h1">portfolio</h1>
             <p>
                 view some of my published projects
             </p>
-            <ul class="list-group    stack">
+            <div class="">
                 {{ range .Pages }}
-                <li class="">
+                <div class="measure--md">
                     <h2 class="h2">
-                        <a href="{{ .Params.link }}" class="header-link" rel="noreferrer" target="_blank">
-                            <i class="fas fa-arrow-right"></i>
+                        <a href="{{ .Params.link }}" class="anchor" rel="noreferrer" target="_blank">
                             {{ .Title }}
                         </a>
                     </h2>
                     <figure class="">
                         <a href="{{ .Params.link }}" class="" rel="noreferrer" target="_blank">
-                            <img src="{{ .Params.image.source }}" alt="{{ .Params.image.alt }}" class="card" width="100%">
+                            <img src="{{ .Params.image.source }}" alt="{{ .Params.image.alt }}" class="card" width="200px">
                         </a>
-                        <figcatpion>
-                            {{ .Summary }}
-                        </figcatpion>
                     </figure>
-                </li>
+                    <p>
+                        {{ .Summary }}
+                    </p>
+                </div>
                 {{ end }}
             </ul>
         </div>

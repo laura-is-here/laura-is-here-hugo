@@ -16,6 +16,7 @@
   --main-bg: hsla(196, 2%, 94%, 100%);
   --main-bg-muted: hsla(196, 2%, 88%, 100%);
   --main-font-color: hsla(240, 15%, 30%, 100%);
+  --slate: hsla(240, 30%, 90%, 100%);
   --switch-width: 64px;
   --switch-height: 32px;
   --switch-padding: 3px;
@@ -30,6 +31,7 @@
   --main-bg: hsla(250, 15%, 20%, 100%);
   --main-font-color: hsla(250, 2%, 84%, 100%);
   --accent-bg: #ccd;
+  --slate: hsla(240, 15%, 40%, 100%);
   --switch-width: 64px;
   --switch-height: 32px;
   --switch-padding: 3px;
@@ -82,6 +84,11 @@ main {
   flex: 1 0 0;
 }
 
+hr {
+  border-bottom: 2px solid var(--main-font-color);
+  margin: 3rem 0;
+}
+
 
 
 
@@ -92,57 +99,45 @@ h1, h2, h3, h4, h5, h6,
   font-family: "Noto Sans SC", sans-serif;
   font-weight: bold;
   line-height: $header-line-height;
-  margin: 2.75rem 0 1rem;
-}
+  margin: 1.5rem 0 0.75rem;
 
-.display-1 {
-  font-size: 4.24rem;
-  color: var(--main-font-color);
-  
-  @media #{$mq-medium} {
-    font-size: 6.85rem;
+  &:first-child {
+    margin-top: 3rem;
   }
-}
 
-.display-2 {
-  font-size: 2.62rem;
-  color: var(--main-font-color);
-  
-  @media #{$mq-medium} {
-    font-size: 4.24rem;
+  & + h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4 {
+    margin-top: 1.15rem;
   }
 }
 
 h1, .h1 {
-  font-size: 2.62rem;
-  
-  @media #{$mq-medium} {
-    font-size: 4.24rem;
-  }
+  font-size: 3rem;
 }
 
 h2, .h2 {
-  font-size: 1.62rem;
-  
-  @media #{$mq-medium} {
-    font-size: 2.62rem;
-    
-  }
+  font-size: 2.25rem;
 }
 
 h3, .h3 {
-  font-size: 1rem;
-  
-  @media #{$mq-medium} {
-    font-size: 1.62rem;
-  }
+  font-size: 1.5rem;
 }
 
 h4, .h4 {
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
+.measure--sm > p, h1, h2, h3, h4, h5, h6 {
+  max-width: 45ch;
+}
 
+.measure--md > p, h1, h2, h3, h4, h5, h6 {
+  max-width: 60ch;
+}
+
+.measure--lg > p, h1, h2, h3, h4, h5, h6 {
+  max-width: 80ch;
+}
 
 
 /* -------------------------------------- $LINKS */
@@ -258,12 +253,18 @@ h4, .h4 {
     flex-flow: row wrap;
   }
   
-  @media #{$mq-large} {
-    flex-flow: row nowrap;
-  }
-  
   @media #{$mq-xlarge} {
   }
+}
+
+.flex-item {
+  flex: 1 1 0;
+}
+
+.flex-item--center {
+  justify-content: center;
+  align-self: center;
+  flex: 1 1 0;
 }
 
 .grid-container {
@@ -391,23 +392,20 @@ h4, .h4 {
 }
 
 .nav-link {
-  color: var(--main-bg);
-  background-color: var(--main-font-color);
+  color: var(--main-font-color);
   text-decoration: none;
   display: block;
-  position: relative;
-  z-index: 1;
   padding: 0.75rem;
   margin: 0.5rem 0;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   font-weight: bold;
-  border-bottom: 4px solid var(--main-color);
+  border-bottom: 4px solid var(--main-font-color);
   
   &:hover,
   &:active {
-    color: var(--main-bg);
-    border-bottom: 4px solid var(--main-bg);
+    color: var(--accent-color);
+    border-bottom: 4px solid var(--accent-color);
   }
   
   @media #{$mq-small} {
@@ -433,14 +431,18 @@ footer {
 /* ------------------------------ $UTILITIES */
 
 .active {
-  color: var(--main-bg);
-  border-bottom: 4px solid var(--main-bg);
+  color: var(--accent-color);
+  border-bottom: 4px solid var(--accent-color);
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
 }
 
 .color-main {
   color: var(--main-color);
+}
+
+.color-accent {
+  color: var(--accent-color);
 }
 
 .border-bottom {
@@ -470,8 +472,16 @@ footer {
   background-color: var(--main-color);
 }
 
+.bg-accent {
+  background-color: var(--accent-color);
+}
+
 .bg-main-muted {
   background-color: var(--main-color-muted);
+}
+
+.bg-slate {
+  background-color: var(--slate);
 }
 
 .bg-dark {
@@ -509,6 +519,15 @@ footer {
   }
 }
 
+.thumb {
+  border-radius: 50%;
+  box-shadow: 1px 2px 4px rgba(0,0,0,0.2), 0px 0px 7px rgba(0, 0, 0, 0.2);
+}
+
+.padding--sm {
+  padding: 0.5rem;
+}
+
 /* -------------------------------- 
 
 File#: _1_switch
@@ -527,6 +546,11 @@ Usage: codyhouse.co/license
   height: var(--switch-height);
   border-radius: 50em;
   padding: var(--switch-padding) 0;
+  margin: 1.5rem 0;
+
+  @media #{$mq-medium} {
+    margin: 0 0.75rem;
+  }
 }
 
 .switch__input, .switch__label {

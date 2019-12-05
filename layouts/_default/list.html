@@ -1,11 +1,11 @@
 {{ define "main" }}
-<div class="grid-container">
-    <div class="grid-item grid-item-main">
-        <div class="container-inner">
+<div class="">
+    <div class="">
+        <div class="container">
             <h1>latest <span class="border-bottom-ain">posts</span></h1>
             <ul class="list-group   stack">
                 {{ range .Pages.ByPublishDate.Reverse }}
-                <li>
+                <li class="measure--md">
                     <h2>
                         <a href="{{ .RelPermalink }}" class="header-link">
                             {{ .Title | markdownify }}

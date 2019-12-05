@@ -4,6 +4,7 @@ image:
     source: "/assets/images/tiffanyhootontherapy.jpg"
     alt: "A screenshot of the home page for Tiffany Hooton's therapy practice site"
 link: "https://tiffanyhootontherapy.neocities.org/"
+date: 2019-10-31
 ---
 the website for tiffany hooton's queer and gender affirming therapy practice 
 

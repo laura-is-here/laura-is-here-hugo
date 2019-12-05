@@ -4,6 +4,7 @@ title: "Small World Travel Africa"
 image:
     alt: "a screenshot of the website for Small World Travel Africa"
     source: "/assets/images/uploads/smallworldtravelafrica.png"
+date: 2019-11-21
 ---
 
 steve and catherine hanna askin's website for small world travel africa, a service offering cultural learning and travel experiences in southern africa
