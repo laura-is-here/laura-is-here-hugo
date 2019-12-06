@@ -1,7 +1,7 @@
 ---
 title: Dr. Jekyll and Mr. ... Hugo?
 author: Laura
-date: 2019-11-12
+date: 2019-12-06
 ---
 ## My experiences with two mainstays in the world of static sites
 
