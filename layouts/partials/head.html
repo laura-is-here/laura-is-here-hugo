@@ -8,7 +8,7 @@
     {{ $sass := resources.Get "/css/main.scss" }}
     {{ $style := $sass | toCSS | postCSS | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Gelasio&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Fira+Sans&display=swap" rel="stylesheet">
     {{ template "_internal/opengraph.html" . }}
     <link href="/assets/images/logo.png" rel="shortcut icon" type="image/ico">
     <link href="https://laura-is-here.github.io" rel="canonical">

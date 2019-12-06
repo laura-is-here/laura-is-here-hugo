@@ -21,11 +21,11 @@
                 <div class="flex-container">
                     {{ range first 2 (where .Pages "Section" "portfolio").ByDate.Reverse }}
                     <div class="flex-item   measure--sm">
-                        <h3 class="">
+                        <h2 class="">
                             <a href="{{ .Params.link }}" class="anchor" rel="noreferrer" target="_blank">
                                 {{ .Title }}
                             </a>
-                        </h3>
+                        </h2>
                         <figure class="">
                             <a href="{{ .Params.link }}" class="" rel="noreferrer" target="_blank">
                                 <img src="{{ .Params.image.source }}" alt="{{ .Params.image.alt }}" class="card" width="100%">
@@ -44,11 +44,11 @@
                 <div class="flex-container">
                     {{ range first 2 (where .Pages "Section" "posts").ByPublishDate.Reverse }}
                     <div class="flex-item   measure--sm">
-                        <h3>
+                        <h2>
                             <a href="{{ .RelPermalink }}" class="anchor">
                                 {{ .Title | markdownify }}
                             </a>
-                        </h3>
+                        </h2>
                         <p class="font-color-muted   margin-top--sm">
                             <em>
                                 <small>posted on </small>
