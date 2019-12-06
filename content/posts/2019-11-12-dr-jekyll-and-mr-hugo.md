@@ -39,13 +39,13 @@ However, as this development environment got more complex, I began running into 
 
 Where Jekyll is flexible and approachable, my first impressions of Hugo were the opposite.
 
-Written in Go, {{< 'Hugo, "the world's fastest framework for building websites,"' 'https://gohugo.io' >}} has a much higher learning curve. But there are also some immediate advantages:
+Written in Go, {{<  'Hugo, "the world's fastest framework for building websites,"' 'https://gohugo.io' >}} has a much higher learning curve. But there are also some immediate advantages:
 
 * installed as a pre-compiled binary (no dealing with NPM, Ruby, etc.)
 * built-in asset pipeline for PostCSS, CSS minification, and image optimization
 * live rendering and generation that is _blazing_ fast
 
-With the {{< "quick start guide" " https://gohugo.io/getting-started/quick-start/" >}} supplied in the documentation, you will absolutely have Hugo up and running in no time—if you're okay with using a pre-built theme.
+With the {{< anchor "quick start guide" " https://gohugo.io/getting-started/quick-start/" >}} supplied in the documentation, you will absolutely have Hugo up and running in no time—if you're okay with using a pre-built theme.
 
 I am _not_ a theme type of person. Web design and frontend development are attractive to me because I'm a picky and detailed tinkerer, so any theme I'm using has to be wide open for modifications.
 
@@ -59,4 +59,4 @@ Once you're familiar with some of the quirks of the setup, Hugo will be a very p
 
 I've begun moving many of my Jekyll projects over to Hugo. Jekyll is a fantastic tool, but Hugo suits my needs a bit better and cuts down on a lot of time spent with configuration and managing assets that Jekyll can require.
 
-If you're new to static site generators, I can't recommend the Jekyll quick start guide enough to get you up and running and tinkering away. Hugo, on the other hand, takes some more getting used to in order to really get a firm grasp on how to fully utilize it, but it is very powerful, very fast, and very worth it. Did I mention it's fast?
+If you're new to static site generators, I can't recommend {{< anchor "Jekyll's step by step tutorial" "https://jekyllrb.com/docs/step-by-step/01-setup/" >}} enough to get you up and running and tinkering away. Hugo, on the other hand, takes some more getting used to in order to really get a firm grasp on how to fully utilize it, but it is very powerful, very fast, and very worth it. {{< anchor "Did I mention it's fast?" "https://forestry.io/blog/hugo-vs-jekyll-benchmark/" >}}
