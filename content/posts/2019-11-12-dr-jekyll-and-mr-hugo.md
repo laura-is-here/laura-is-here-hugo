@@ -17,7 +17,7 @@ It wasn't until the folks with {{< anchor "Long Beach Anarchist Collective" "htt
 
 ## Jekyll
 
-Jekyll was initially appealing to me due to its home in the realm of {{< anchor "Ruby" "https://ruby-lang.org/" >}}, a language and environment with which I was already somewhat familiar.
+Jekyll was initially appealing to me due to its home in the realm of {{< anchor "Ruby" "https://ruby-lang.org/" >}}, a language and environment with which I was already somewhat familiar, as well as its flexibility and accessibility for new users.
 
 Jekyll presented several immediate advantages to my work flow and build process:
 
@@ -36,3 +36,27 @@ As a workaround I began using MAKE to set up the development environment and get
 However, as this development environment got more complex, I began running into problems with build speeds. Jekyll slowed down just a little bit, taking anywhere between 5 - 7 seconds to regenerate the live preview in the browser. While not a _long_ time, the extended periods waiting to click refresh in the browser after every save add up and, again, introduce more frustration to developing.
 
 ## Hugo: something faster
+
+Where Jekyll is flexible and approachable, my first impressions of Hugo were the opposite.
+
+Written in Go, Hugo, "the world's fastest framework for building websites," has a much higher learning curve. But there are also some immediate advantages:
+
+* installed as a pre-compiled binary (no dealing with NPM, Ruby, etc.)
+* built-in asset pipeline for PostCSS, CSS minification, and image optimization
+* live rendering and generation that is _blazing_ fast
+
+With the quick start guide supplied in the documentation, you will absolutely have Hugo up and running in no time&mdash;if you're okay with using a pre-built theme.
+
+I am _not_ a theme type of person. Web design and frontend development are attractive to me because I'm a picky and detailed tinkerer, so any theme I'm using has to be wide open for modifications.
+
+With some knowledge, Hugo's themes are absolutely open to customization, but that's not something a beginner will be ready to dive into, and since themes are independently maintained, you're often working with documentation that is not fully fleshed out or out of date, especially since Hugo is much more rigid when it comes to templating and directory structures.
+
+All that being said, if you spend some time with Hugo and take your time with the documentation, Hugo is really worth it. It's incredibly fast and includes plenty of built-in functionality that will be useful if working with NPM and Node is not your cup of tea.
+
+Once you're familiar with some of the quirks of the setup, Hugo will be a very powerful tool in your arsenal.
+
+## The bottom line
+
+I've begun moving many of my Jekyll projects over to Hugo. Jekyll is a fantastic tool, but Hugo suits my needs a bit better and cuts down on a lot of time spent with configuration and managing assets that Jekyll can require.
+
+If you're new to static site generators, I can't recommend the Jekyll quick start guide enough to get you up and running and tinkering away. Hugo, on the other hand, takes some more getting used to in order to really get a firm grasp on how to fully utilize it, but it is very powerful, very fast, and very worth it. Did I mention it's fast?
