@@ -146,8 +146,6 @@ html {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   box-sizing: inherit;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -192,12 +190,13 @@ hr {
 
 
 
+
 /* ------------------------------------- $TYPOGRAPHY */
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4 {
   font-family: Comfortaa, sans-serif;
-  font-weight: bold;
+  font-weight: 600;
   line-height: $header-line-height;
   margin: 1.5rem 0 0.75rem;
 
@@ -247,6 +246,10 @@ h4, .h4 {
   font-family: Comfortaa, sans-serif;
 }
 
+strong {
+  font-weight: 600;
+}
+
 /* -------------------------------------- $LINKS */
 
 .anchor {
@@ -271,7 +274,7 @@ h4, .h4 {
   padding: 0.5rem 0.75rem;
   margin: 0.25rem 0;
   cursor: pointer;
-  font-weight: bold;
+  font-weight: 600;
   text-decoration: none;
 
   &:visited {
@@ -778,7 +781,7 @@ Usage: codyhouse.co/license
   border: 4px solid var(--font-color);
   padding: 0.75rem;
   cursor: pointer;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .form-control::placeholder {
