@@ -39,7 +39,7 @@ However, as this development environment got more complex, I began running into 
 
 Where Jekyll is flexible and approachable, my first impressions of Hugo were the opposite.
 
-Written in Go, {{<  'Hugo, "the world's fastest framework for building websites,"' 'https://gohugo.io' >}} has a much higher learning curve. But there are also some immediate advantages:
+Written in Go, {{< anchor 'Hugo, "the world's fastest framework for building websites,"' 'https://gohugo.io' >}} has a much higher learning curve. But there are also some immediate advantages:
 
 * installed as a pre-compiled binary (no dealing with NPM, Ruby, etc.)
 * built-in asset pipeline for PostCSS, CSS minification, and image optimization
