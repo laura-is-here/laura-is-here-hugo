@@ -195,8 +195,8 @@ hr {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4 {
-  font-family: Comfortaa, sans-serif;
-  font-weight: 600;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
   line-height: $header-line-height;
   margin: 1.5rem 0 0.75rem;
 
@@ -213,7 +213,7 @@ h1, h2, h3, h4, h5, h6,
 h1, .h1 {
   font-size: 3rem;
   font-weight: 500;
-  font-family: Comfortaa, sans-serif;
+  font-family: Solway, sans-serif;
 }
 
 h2, .h2 {
@@ -241,13 +241,13 @@ h4, .h4 {
 }
 
 .site-title {
-  font-weight: 1000;
+  font-weight: 900;
   font-size: 2rem;
-  font-family: Comfortaa, sans-serif;
+  font-family: Solway, sans-serif;
 }
 
 strong {
-  font-weight: 600;
+  font-weight: 900;
 }
 
 /* -------------------------------------- $LINKS */
@@ -514,7 +514,7 @@ strong {
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   font-weight: bold;
-  font-family: Comfortaa, sans-serif;
+  font-family: Lato, sans-serif;
   border-bottom: 4px solid var(--font-color);
   
   &:hover,

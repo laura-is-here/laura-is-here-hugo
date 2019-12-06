@@ -43,7 +43,7 @@
                 <h1>Latest posts</h1>
                 <div class="flex-container">
                     {{ range first 2 (where .Pages "Section" "posts").ByPublishDate.Reverse }}
-                    <div class="flex-item   measure--md">
+                    <div class="flex-item   measure--md    padding--lg">
                         <h2>
                             <a href="{{ .RelPermalink }}" class="anchor">
                                 {{ .Title | markdownify }}
