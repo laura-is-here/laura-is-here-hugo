@@ -218,21 +218,22 @@ h4, .h4 {
   font-size: 1.25rem;
 }
 
-.measure--sm > p, h1, h2, h3, h4, h5, h6, ul, li {
+.measure--sm {
   max-width: 45ch;
 }
 
-.measure--md > p, h1, h2, h3, h4, h5, h6 {
+.measure--md {
   max-width: 60ch;
 }
 
-.measure--lg > p, h1, h2, h3, h4, h5, h6 {
+.measure--lg {
   max-width: 80ch;
 }
 
 .site-title {
   font-weight: 1000;
   font-size: 2rem;
+  font-family: Comfortaa, sans-serif;
 }
 
 /* -------------------------------------- $LINKS */
@@ -781,7 +782,7 @@ Usage: codyhouse.co/license
   }
 }
 .stack {
-  --space: 1.5em;
+  --space: 4.5rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

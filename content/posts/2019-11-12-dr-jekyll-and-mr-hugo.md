@@ -2,15 +2,14 @@
 title: Dr. Jekyll and Mr. ... Hugo?
 author: Laura
 date: 2019-11-12
-
 ---
 ## My experiences with two mainstays in the world of static sites
 
 As a primarily self-taught designer and developer, discovering static site generators marked a breakthrough in my web development skills and, more importantly, work flow and build process.
 
-<!--more-->
-
 I cut my teeth on HTML and CSS in plain text files uploaded straight to the server. The first iteration of this site was actually hosted on {{< anchor "neocities" "https://neocities.org" >}} and was, in fact, primarily edited in their in-browser editor!
+
+<!--more-->
 
 It wasn't until the folks with {{< anchor "Long Beach Anarchist Collective" "https://anarchistlb.org" >}} requested an events page that I started delving more into new solutions for building out new pages quickly and, {{< anchor "after ruling out Wordpress as bulky and unnecessary" "https://gettingthingstech.com/hugo-vs.-wordpress-page-load-speed-comparison-hugo-leaves-wordpress-in-its-dust/" >}}, discovered {{< anchor "Jekyll" "https://jekyllrb.com" >}}.
 
