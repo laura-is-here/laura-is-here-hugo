@@ -25,7 +25,7 @@ Jekyll presented several immediate advantages to my work flow and build process:
 * the ability to use "includes" to easily recycle components like menus, headers, etc.
 * integration with Sass/SCSS
 
-I transitioned an early version of this site, as well as {{< anchor "Tiffany Hooton's site" "tiffanyhootontherapy.neocities.org" >}}, to use Jekyll before starting a more full-flegded blog for {{< anchor "Long Beach Anarchist Collective" "https://anarchistlb.org" >}}. The results, both in terms of development workflow and the final product, were huge improvements to the barebones HTML and CSS that I had worked with before.
+I transitioned an early version of this site, as well as {{< anchor "Tiffany Hooton's site" "https://tiffanyhootontherapy.neocities.org" >}}, to use Jekyll before starting a more full-flegded blog for {{< anchor "Long Beach Anarchist Collective" "https://anarchistlb.org" >}}. The results, both in terms of development workflow and the final product, were huge improvements to the barebones HTML and CSS that I had worked with before.
 
 ### Cons of Jekyll
 
