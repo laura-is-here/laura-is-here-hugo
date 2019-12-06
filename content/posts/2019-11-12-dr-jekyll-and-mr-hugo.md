@@ -11,13 +11,13 @@ As a primarily self-taught designer and developer, discovering static site gener
 
 <!--more-->
 
-I cut my teeth on html and css in plain text files uploaded straight to the server. The first iteration of this site was actually hosted on {{< anchor "neocities" "https://neocities.org" >}} and was, in fact, primarily edited in their in-browser editor!
+I cut my teeth on HTML and CSS in plain text files uploaded straight to the server. The first iteration of this site was actually hosted on {{< anchor "neocities" "https://neocities.org" >}} and was, in fact, primarily edited in their in-browser editor!
 
-It wasn't until the folks with {{< anchor "Long Beach Anarchist Collective" "https://anarchistlb.org" >}} requested an events page that I started delving more into content management systems and, {{< anchor "after ruling out Wordpress as bulky and unnecessary" "https://gettingthingstech.com/hugo-vs.-wordpress-page-load-speed-comparison-hugo-leaves-wordpress-in-its-dust/" >}}, discovered {{< anchor "Jekyll" "https://jekyllrb.com" >}}.
+It wasn't until the folks with {{< anchor "Long Beach Anarchist Collective" "https://anarchistlb.org" >}} requested an events page that I started delving more into new solutions for building out new pages quickly and, {{< anchor "after ruling out Wordpress as bulky and unnecessary" "https://gettingthingstech.com/hugo-vs.-wordpress-page-load-speed-comparison-hugo-leaves-wordpress-in-its-dust/" >}}, discovered {{< anchor "Jekyll" "https://jekyllrb.com" >}}.
 
 ## Jekyll
 
-Jekyll was initially appealing to me due to its home in the realm of {{< anchor "Ruby" "https://ruby-lang.org/" >}}, a language and environment with which I was already somewhat familiar, as well as its flexibility and accessibility for new users.
+Jekyll was initially appealing to me due to its home in the realm of Ruby a language and environment with which I was already somewhat familiar, as well as its flexibility and accessibility for new users.
 
 Jekyll presented several immediate advantages to my work flow and build process:
 
@@ -31,7 +31,7 @@ I transitioned an early version of this site, as well as {{< anchor "Tiffany Hoo
 
 Jekyll was not without some cons. As I started delving into the world of NPM and Node more, I found that managing Node modules alongside Ruby was a tad tedious for someone of my skill level, and getting things as simple as Autoprefixer and PostCSS set up within Ruby and Jekyll was less than intuitive and frustrating due to lack of good documentation and unmaintained packages.
 
-As a workaround I began using MAKE to set up the development environment and get the best out of NPM and Ruby based tools.
+As a workaround {{< anchor "I began using GNU Make" "https://simpleit.rocks/ruby/jekyll/tutorials/how-to-add-bootstrap-4-to-jekyll-the-right-way/" >}} to set up the development environment and get the best out of NPM and Ruby based tools.
 
 However, as this development environment got more complex, I began running into problems with build speeds. Jekyll slowed down just a little bit, taking anywhere between 5 - 7 seconds to regenerate the live preview in the browser. While not a _long_ time, the extended periods waiting to click refresh in the browser after every save add up and, again, introduce more frustration to developing.
 
@@ -39,13 +39,13 @@ However, as this development environment got more complex, I began running into 
 
 Where Jekyll is flexible and approachable, my first impressions of Hugo were the opposite.
 
-Written in Go, Hugo, "the world's fastest framework for building websites," has a much higher learning curve. But there are also some immediate advantages:
+Written in Go, {{< 'Hugo, "the world's fastest framework for building websites,"' 'https://gohugo.io' >}} has a much higher learning curve. But there are also some immediate advantages:
 
 * installed as a pre-compiled binary (no dealing with NPM, Ruby, etc.)
 * built-in asset pipeline for PostCSS, CSS minification, and image optimization
 * live rendering and generation that is _blazing_ fast
 
-With the quick start guide supplied in the documentation, you will absolutely have Hugo up and running in no time&mdash;if you're okay with using a pre-built theme.
+With the quick start guide supplied in the documentation, you will absolutely have Hugo up and running in no time—if you're okay with using a pre-built theme.
 
 I am _not_ a theme type of person. Web design and frontend development are attractive to me because I'm a picky and detailed tinkerer, so any theme I'm using has to be wide open for modifications.
 
