@@ -58,7 +58,7 @@
   --accent-color: var(--pink-600);
   --accent-color-muted: var(--pink-300);
   --background-color: var(--light-800);
-  --font-color: var(--dark-600);
+  --font-color: var(--dark-700);
   --font-color-muted: var(--dark-900); 
   --slate: var(--slate-900);
   --switch-width: 64px;
@@ -240,6 +240,10 @@ h4, .h4 {
 
 .anchor {
   color: var(--font-color);
+
+  &:visited {
+    color: var(--font-color-muted);
+  }
   
   &:hover,
   &:active,
@@ -359,7 +363,7 @@ h4, .h4 {
 
 .flex-item--center {
   justify-content: center;
-  align-self: center;
+  justify-self: flex-end;
   flex: 1 1 0;
 }
 
@@ -613,9 +617,27 @@ footer {
   }
 }
 
+.card__border-image {
+  position: absolute;
+  width: 150px;
+  top: -115px;
+  right: -50px;
+
+  @media #{$mq-medium} {
+    width: 200px;
+    top: -150px;
+    right: 50px;
+  }
+
+}
+
 .list-group {
   list-style: none;
   padding: 0;
+}
+
+.position-relative {
+  position: relative;
 }
 
 .sticky-sm {
@@ -627,8 +649,8 @@ footer {
 }
 
 .thumb {
-  border-radius: 50%;
   box-shadow: 1px 2px 4px rgba(0,0,0,0.2), 0px 0px 7px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
 }
 
 .margin-top--sm {

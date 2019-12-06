@@ -6,19 +6,21 @@
             <ul class="list-group   stack">
                 {{ range .Pages.ByPublishDate.Reverse }}
                 <li class="measure--md">
-                    <h2>
-                        <a href="{{ .RelPermalink }}" class="anchor">
-                            {{ .Title | markdownify }}
-                        </a>
-                    </h2>
-                    <p class="font-color-muted    margin-top--sm">
-                        <em>
-                            <small>posted on </small>
-                            <strong>{{ .Date.Format "January 2, 2006" }}</strong>
-                            <small>by</small>
-                            <strong>{{ .Page.Params.author }}</strong>
-                        </em>
-                    </p>
+                    <div class="card    padding--sm   bg-main">
+                        <h2>
+                            <a href="{{ .RelPermalink }}" class="anchor">
+                                {{ .Title | markdownify }}
+                            </a>
+                        </h2>
+                        <p class="font-color-muted    margin-top--sm">
+                            <em>
+                                <small>posted on </small>
+                                <strong>{{ .Date.Format "January 2, 2006" }}</strong>
+                                <small>by</small>
+                                <strong>{{ .Page.Params.author }}</strong>
+                            </em>
+                        </p>
+                    </div>
                     {{ .Summary | markdownify }}
                     <a href="{{ .RelPermalink }}" class="anchor--button">Read more</a>
                 </li>
