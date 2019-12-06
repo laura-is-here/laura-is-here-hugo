@@ -17,7 +17,7 @@ It wasn't until the folks with {{< anchor "Long Beach Anarchist Collective" "htt
 
 ## Jekyll
 
-Jekyll was initially appealing to me due to its home in the realm of Ruby a language and environment with which I was already somewhat familiar, as well as its flexibility and accessibility for new users.
+Jekyll was initially appealing to me due to its home in the realm of Ruby, a language and environment with which I was already somewhat familiar, as well as its flexibility and accessibility for new users.
 
 Jekyll presented several immediate advantages to my work flow and build process:
 
