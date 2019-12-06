@@ -45,7 +45,7 @@ Written in Go, {{< anchor "Hugo, _the world's fastest framework for building web
 * built-in asset pipeline for PostCSS, CSS minification, and image optimization
 * live rendering and generation that is _blazing_ fast
 
-With the {{< anchor "quick start guide" " https://gohugo.io/getting-started/quick-start/" >}} supplied in the documentation, you will absolutely have Hugo up and running in no time—if you're okay with using a pre-built theme.
+With the {{< anchor "quick start guide" "https://gohugo.io/getting-started/quick-start/" >}} supplied in the documentation, you will absolutely have Hugo up and running in no time—if you're okay with using a pre-built theme.
 
 I am _not_ a theme type of person. Web design and frontend development are attractive to me because I'm a picky and detailed tinkerer, so any theme I'm using has to be wide open for modifications.
 
