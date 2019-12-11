@@ -1,8 +1,7 @@
 {{ define "main" }}
-<section class="">
-    <div class="">
+<section>
         <div class="container    stack">
-            <div class="measure--md    card     padding--lg     bg-main    margin-top--lg">
+            <div class="measure--md    card     padding--lg     bg-main">
                 <h1>
                     Hello, world!
                 </h1>
@@ -16,14 +15,18 @@
             </div>
             <div class="">
                 <h1>
-                    My latest projects
+                    <span class="text--bg-line--primary">
+                        My latest projects
+                    </span>
                 </h1>
                 <div class="flex-container">
                     {{ range first 2 (where .Pages "Section" "portfolio").ByDate.Reverse }}
-                    <div class="flex-item   measure--md">
+                    <div class="flex-item   measure--md    padding-x--lg">
                         <h2 class="">
                             <a href="{{ .Params.link }}" class="anchor" rel="noreferrer" target="_blank">
-                                {{ .Title }}
+                                <span class="text--bg-line--accent">
+                                    {{ .Title }}
+                                </span>
                             </a>
                         </h2>
                         <figure class="">
@@ -40,13 +43,19 @@
                 <a href="/portfolio/" class="anchor--button">View my full portfolio</a>
             </div>
             <div>
-                <h1>Latest posts</h1>
-                <div class="flex-container">
+                <h1>
+                    <span class="text--bg-line--primary">
+                        Latest posts
+                    </span>
+                </h1>
+                <ul class="list-group   flex-container">
                     {{ range first 2 (where .Pages "Section" "posts").ByPublishDate.Reverse }}
-                    <div class="flex-item   measure--md    padding-x--lg">
+                    <li class="flex-item   measure--md    padding-x--lg">
                         <h2>
                             <a href="{{ .RelPermalink }}" class="anchor">
-                                {{ .Title | markdownify }}
+                                <span class="text--bg-line--accent">
+                                    {{ .Title | markdownify }}
+                                </span>
                             </a>
                         </h2>
                         <p class="font-color-muted   margin-top--sm">
@@ -58,12 +67,12 @@
                             </em>
                         </p>
                         {{ .Summary | markdownify }}
-                        <a href="{{ .RelPermalink }}" class="anchor--button">Read more</a>
-                    </div>
+                    </li>
                     {{ end }}
-                </div>
+                </ul>
+                <a href="/posts/" class="anchor--button">Read more of my blog</a>
             </div>
-            <div class="flex-container     card     bg-main    padding--lg    margin-top--lg    measure--md">
+            <div class="flex-container     card     bg-main    padding--lg    measure--md">
                 <div class="flex-item   position-relative">
                     <h1>About me</h1>
                     <p>
@@ -103,8 +112,7 @@
                     </figure>
                 </div>
             </div>
+        {{ partial "sidebar.html" . }}
         </div>
-    </div>
-    {{ partial "sidebar.html" . }}
 </section>
 {{ end }}
