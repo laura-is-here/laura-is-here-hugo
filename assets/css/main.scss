@@ -116,30 +116,11 @@
   --theme-color: var(--purple-400);
   --theme-color-muted: var(--purple-200);
   --accent-color: var(--pink-400);
-  --accent-color-muted: var(--pink-.text--bg-line--primary {
-    position: relative;
-    z-index: 10;
-    
-    &:before {
-      display: block;
-      content: "";
-      height: 1rem;
-      width: 100%;
-      background-color: var(--theme-color);
-      position: absolute;
-      top: 0.25rem;
-      left: -0.75rem;
-      z-index: -1;
-    }
-  }300);
+  --accent-color-muted: var(--pink-300);
   --background-color: var(--dark-100);
-  --font-color: var(--light-800);
-  --font-color-muted: var(--light-600); 
+  --font-color: var(--light-700);
+  --font-color-muted: var(--light-500); 
   --slate: var(--slate-300);
-  --switch-width: 64px;
-  --switch-height: 32px;
-  --switch-padding: 3px;
-  --switch-animation-duration: 0.2s;
   
   .bg-stripes {
     background-image: url("/assets/images/stripes_dark.svg");
@@ -154,6 +135,39 @@
     background-position: center;
     background-size: cover;
   }
+  
+  body {
+    line-height: $base-line-height + 0.2;
+
+    @media #{$mq-medium} {
+      font-size: $base-font-size*1.2;
+      line-height: $base-line-height * 1.2 + 0.2;
+    }
+    
+    @media #{$mq-large} {
+      font-size: $base-font-size*1.3;
+    }
+    
+    @media #{$mq-xlarge} {
+      font-size: $base-font-size*1.4;
+    }
+    
+    @media #{$mq-xxlarge} {
+      font-size: $base-font-size*1.6;
+    }
+  }
+  
+  strong {
+    font-weight: 300;
+  }
+  
+  img {
+    opacity: 0.75;
+    
+    &:hover {
+      opacity: 1;
+    }
+  }
 }
 
 html {
@@ -161,6 +175,14 @@ html {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   scroll-behavior: smooth;
+}
+
+html.color-in-transition,
+html.color-in-transition *,
+html.color-in-transition *:after,
+html.color-in-transition *:before {
+  transition: all 750ms !important;
+  transition-delay: 0 !important;
 }
 
 *, *:before, *:after {
@@ -275,7 +297,7 @@ p {
 }
 
 strong {
-  font-weight: 900;
+  font-weight: 600;
 }
 
 /* -------------------------------------- $LINKS */
@@ -292,7 +314,7 @@ a {
   &:focus {
     color: var(--main-bg);
     background-color: var(--theme-color);
-
+    
     .text--bg-line--accent {
       &:before {
         top: initial;
@@ -305,7 +327,7 @@ a {
   }
 }
 
-.anchor--button {
+button, .anchor--button {
   display: inline-block;
   color: var(--font-color);
   border: 4px solid var(--font-color);
@@ -425,9 +447,9 @@ a {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(var(--grid-item-size), 1fr));
     grid-gap: 1.5rem;
-
+    
     .card + .card {
-       margin-top: 0;
+      margin-top: 0;
     }
   }
 }
@@ -471,7 +493,7 @@ a {
 .card {
   border-radius: 5px;
   box-shadow: 1px 2px 4px rgba(0,0,0,0.2), 0px 0px 7px rgba(0, 0, 0, 0.2);
-
+  
   + .card {
     margin-top: 1.5rem;
   }
@@ -696,6 +718,13 @@ footer {
 
 .bg-main {
   background-color: var(--theme-color);
+
+  .anchor--button {
+    &:hover,
+    &:active {
+      background-color: var(--accent-color);
+    }
+  }
 }
 
 .bg-accent {
@@ -703,7 +732,6 @@ footer {
   --font-color: var(--light-700);
   --font-color-muted: var(--light-600);
   color: var(--font-color);
-  
 }
 
 .bg-main-muted {
@@ -800,19 +828,16 @@ Usage: codyhouse.co/license
 -------------------------------- */
 
 .switch {
+  font-size: 0.75rem;
   flex-shrink: 0;
   align-items: center;
   position: relative;
   border-radius: 50em;
   border: none;
-  margin: 1.5rem 0;
-  padding: 0.25em;
-  color: var(--font-color);
-  background-color: var(--accent-color);
-  
-  @media #{$mq-medium} {
-    margin: 0 0.75rem;
-  }
+  margin: 0 0 0.5rem;
+  padding: 0.5rem;
+  color: var(--accent-color);
+  background-color: var(--font-color);
 }
 
 .form-label {
