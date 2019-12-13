@@ -8,10 +8,11 @@
 /*--------------------------------- $GENERAL */
 
 :root {
-  --blue-hue: 196;
-  --yellow-hue: 45;
+  --blue-hue: 240;
   --pink-hue: 320;
-  --red-hue: 5;
+  --red-hue: 0;
+  --yellow-hue: 35;
+  --green-hue: 105;
   --main-hue: var(--blue-hue);
   --accent-hue: var(--pink-hue);
   --blue-100: hsla(196, 65%, 15%, 100%);
@@ -59,13 +60,13 @@
   --slate-700: hsla(240, 30%, 60%, 100%);
   --slate-800: hsla(240, 30%, 65%, 100%);
   --slate-900: hsla(240, 30%, 70%, 100%);
-  --theme-color: hsla(var(--main-hue), 65%, 65%, 100%);
+  --theme-color: hsla(var(--main-hue), 65%, 75%, 100%);
   --theme-color-muted: hsla(var(--main-hue), 65%, 35%, 100%);
   --accent-color: hsla(var(--accent-hue), 60%, 70%, 100%);
   --accent-color-muted: hsla(var(--accent-hue), 60%, 60%, 100%);
   --background-color: hsla(var(--main-hue), 2%, 92%, 100%);
   --font-color: hsla(var(--main-hue), 15%, 30%, 100%);
-  --font-color-muted: hsla(var(--main-hue), 15%, 35%, 100%);
+  --font-color-muted: hsla(var(--main-hue), 0%, 35%, 100%);
   --slate: var(--slate-400);
   --switch-width: 64px;
   --switch-height: 32px;
@@ -119,13 +120,14 @@
   --slate-700: hsla(240, 30%, 60%, 100%);
   --slate-800: hsla(240, 30%, 65%, 100%);
   --slate-900: hsla(240, 30%, 70%, 100%);
-  --theme-color: var(--purple-400);
-  --theme-color-muted: var(--purple-200);
-  --accent-color: var(--pink-400);
+  --theme-color: hsla(var(--main-hue), 64%, 33%, 100%);
+  --theme-color-muted: hsla(var(--main-hue), 64%, 23%, 100%);
+  --accent-color: hsla(var(--accent-hue), 77%, 43%, 100%);
   --accent-color-muted: var(--pink-300);
-  --background-color: var(--dark-100);
-  --font-color: var(--light-700);
-  --font-color-muted: var(--light-500); 
+  --accent-color-muted: hsla(var(--accent-hue), 77%, 33%, 100%);
+  --background-color: hsla(var(--main-hue), 15%, 15%, 100%);
+  --font-color: hsla(var(--main-hue), 2%, 90%, 100%);
+  --font-color-muted: hsla(var(--main-hue), 2%, 82%, 100%);
   --slate: var(--slate-300);
   
   .bg-stripes {
@@ -855,6 +857,7 @@ Usage: codyhouse.co/license
   position: absolute;
   right: 0;
   left: 0;
+  z-index: 20;
   margin: 0 3.75rem;
 }
 
