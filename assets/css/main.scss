@@ -8,6 +8,12 @@
 /*--------------------------------- $GENERAL */
 
 :root {
+  --blue-hue: 196;
+  --yellow-hue: 45;
+  --pink-hue: 320;
+  --red-hue: 5;
+  --main-hue: var(--blue-hue);
+  --accent-hue: var(--pink-hue);
   --blue-100: hsla(196, 65%, 15%, 100%);
   --blue-200: hsla(196, 65%, 25%, 100%);
   --blue-300: hsla(196, 65%, 35%, 100%);
@@ -53,13 +59,13 @@
   --slate-700: hsla(240, 30%, 60%, 100%);
   --slate-800: hsla(240, 30%, 65%, 100%);
   --slate-900: hsla(240, 30%, 70%, 100%);
-  --theme-color: var(--blue-600);
-  --theme-color-muted: var(--blue-300);
-  --accent-color: var(--pink-700);
-  --accent-color-muted: var(--pink-600);
-  --background-color: var(--light-800);
-  --font-color: var(--dark-700);
-  --font-color-muted: var(--dark-900); 
+  --theme-color: hsla(var(--main-hue), 65%, 65%, 100%);
+  --theme-color-muted: hsla(var(--main-hue), 65%, 35%, 100%);
+  --accent-color: hsla(var(--accent-hue), 60%, 70%, 100%);
+  --accent-color-muted: hsla(var(--accent-hue), 60%, 60%, 100%);
+  --background-color: hsla(var(--main-hue), 2%, 92%, 100%);
+  --font-color: hsla(var(--main-hue), 15%, 30%, 100%);
+  --font-color-muted: hsla(var(--main-hue), 15%, 35%, 100%);
   --slate: var(--slate-400);
   --switch-width: 64px;
   --switch-height: 32px;
@@ -744,11 +750,6 @@ footer {
   --font-color-muted: var(--light-600);
 }
 
-.bg-dark {
-  background-color: var(--accent-bg);
-  color: var(--main-bg);
-}
-
 .bg-triangles-grad {
   background-image: url("/assets/images/pink_blue_gradient.svg");
   background-position: center;
@@ -762,12 +763,9 @@ footer {
 }
 
 .bg-stripes {
-  background-image: url("/assets/images/stripes.svg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -1;
 }
-
 
 .list-group {
   list-style: none;
@@ -834,10 +832,36 @@ Usage: codyhouse.co/license
   position: relative;
   border-radius: 50em;
   border: none;
-  margin: 0 0 0.5rem;
+  margin: 0.25rem 0.25rem 0.75rem;
   padding: 0.5rem;
   color: var(--accent-color);
   background-color: var(--font-color);
+
+  .switch {
+    margin-top: 0.25rem;
+  }
+}
+
+.collapsible[hidden] {
+  display: none;
+}
+
+.collapsible {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: 0 3.75rem;
+}
+
+.themes {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
 }
 
 .form-label {

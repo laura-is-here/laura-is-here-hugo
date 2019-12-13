@@ -45,3 +45,26 @@ if(toggle) {
     }
   }; 
 }
+
+const colorSwitch = document.querySelector('#colorSwitch');
+
+if(colorSwitch) {
+  colorSwitch.addEventListener('click', (e) => {
+    let target = e.target.nextElementSibling;
+
+    if(target.hasAttribute('hidden')) {
+      target.removeAttribute('hidden');
+      e.target.setAttribute('aria-expanded', 'true');
+      target.addEventListener('click', (e) => changeColor(target))
+    } else {
+      target.setAttribute('hidden', '');
+      e.target.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  function changeColor(target) {
+    if (target.nextElementSibling.classList.contains('red-hue')) {
+      document.documentElement.setAttribute('--main-hue', 'red-hue');
+    }
+  }
+}
