@@ -10,11 +10,11 @@
 :root {
   --blue-hue: 240;
   --pink-hue: 320;
-  --red-hue: 0;
+  --orange-hue: 360;
   --yellow-hue: 35;
-  --green-hue: 105;
+  --green-hue: 145;
   --main-hue: var(--blue-hue);
-  --accent-hue: var(--pink-hue);
+  --accent-hue: calc(var(--main-hue) - 80);
   --blue-100: hsla(196, 65%, 15%, 100%);
   --blue-200: hsla(196, 65%, 25%, 100%);
   --blue-300: hsla(196, 65%, 35%, 100%);
@@ -615,8 +615,8 @@ button, .anchor--button {
   
   &:hover,
   &:active {
-    color: var(--accent-color-muted);
-    border-bottom: 4px solid var(--accent-color-muted);
+    color: var(--accent-color);
+    border-bottom: 4px solid var(--accent-color);
     --theme-color: transparent;
   }
   
@@ -643,9 +643,9 @@ footer {
 /* ------------------------------ $UTILITIES */
 
 .active {
-  --font-color: var(--accent-color-muted);
-  --font-color-muted: var(--accent-color-muted);
-  border-bottom: 4px solid var(--accent-color-muted);
+  --font-color: var(--accent-color);
+  --font-color-muted: var(--accent-color);
+  border-bottom: 4px solid var(--accent-color);
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
 }
@@ -696,7 +696,7 @@ footer {
   &:before {
     display: block;
     content: "";
-    height: 1rem;
+    height: 1.5rem;
     width: 100%;
     background-color: var(--theme-color);
     position: absolute;
@@ -713,7 +713,7 @@ footer {
   &:before {
     display: block;
     content: "";
-    height: 1rem;
+    height: 2.25rem;
     width: 100%;
     background-color: var(--accent-color);
     position: absolute;
@@ -842,6 +842,11 @@ Usage: codyhouse.co/license
   .switch {
     margin-top: 0.25rem;
   }
+}
+
+.close {
+  background-color: transparent;
+  border: none;
 }
 
 .collapsible[hidden] {
