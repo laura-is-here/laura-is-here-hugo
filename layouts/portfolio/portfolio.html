@@ -8,17 +8,17 @@
         </h1>
         <ul class="list-group    grid-container">
             {{ range .Pages }}
-            <li class="flex-item   padding-x--lg   measure--md">
-                    <h2>
-                        <a href="{{ .Params.link }}" class="anchor" rel="noreferrer" target="_blank">
-                            <span class="text--bg-line--accent">
-                                {{ .Title }}
-                            </span>
-                        </a>
-                    </h2>
+            <li class="padding-x--lg   measure--md">
+                <h2>
+                    <a href="{{ .Params.link }}" class="anchor" rel="noreferrer" target="_blank">
+                        <span class="text--bg-line--accent">
+                            {{ .Title }}
+                        </span>
+                    </a>
+                </h2>
                 <figure>
                     <a href="{{ .Params.link }}" class="no-style-link" rel="noreferrer" target="_blank">
-                        <img src="{{ .Params.image.source }}" alt="{{ .Params.image.alt }}" class="card" width="100%">
+                        <img data-src="{{ .Params.image.source }}" alt="{{ .Params.image.alt }}" class="card    lazy-load" width="100%">
                     </a>
                 </figure>
                 <p>

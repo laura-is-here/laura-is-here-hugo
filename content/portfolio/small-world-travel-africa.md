@@ -3,7 +3,7 @@ link: "https://smallworldtravelafrica.org"
 title: "Small World Travel Africa"
 image:
     alt: "a screenshot of the website for Small World Travel Africa"
-    source: "/assets/images/uploads/smallworldtravelafrica.png"
+    source: "/assets/images/smallworldtravelafrica.png"
 date: 2019-11-21
 ---
 

@@ -1,118 +1,125 @@
 {{ define "main" }}
 <section>
-        <div class="container    stack">
-            <div class="measure--md    card     padding--lg     bg-main">
-                <h1>
-                    Hello, world!
-                </h1>
+    <div class="container    stack">
+        <div class="measure--md    card     padding--lg     bg-main">
+            <h1>
+                Hello, world!
+            </h1>
+            <p>
+                I am a freelance web designer and developer specializing in fast, accessible, and mobile-friendly websites.
+            </p>
+            <p>
+                I am currently available to work on new projects. 
+            </p>
+            <a href="#contact" class="anchor--button">Hire me!</a>
+        </div>
+        <div class="">
+            <h1>
+                <span class="text--bg-line--primary">
+                    My latest projects
+                </span>
+            </h1>
+            <ul class="grid-container    list-group">
+                {{ range first 2 (where .Pages "Section" "portfolio").ByDate.Reverse }}
+                <li class="measure--md    padding-x--lg">
+                    <h2 class="">
+                        <a href="{{ .Params.link }}" class="anchor" rel="noreferrer" target="_blank">
+                            <span class="text--bg-line--accent">
+                                {{ .Title }}
+                            </span>
+                        </a>
+                    </h2>
+                    <figure>
+                        <a href="{{ .Params.link }}" class="no-style-link" rel="noreferrer" target="_blank">
+                            
+                            <img data-src="{{ .Params.image.source }}" alt="{{ .Params.image.alt }}" class="card    lazy-load" width="100%">
+                        </a>
+                    </figure>
+                    <p>
+                        {{ .Summary }}
+                    </p>
+                </li>
+                {{ end }}
+            </ul>
+            <a href="/portfolio/" class="anchor--button">View my full portfolio</a>
+        </div>
+        <div>
+            <h1>
+                <span class="text--bg-line--primary">
+                    Latest posts
+                </span>
+            </h1>
+            <ul class="list-group   flex-container">
+                {{ range first 2 (where .Pages "Section" "posts").ByPublishDate.Reverse }}
+                <li class="flex-item   measure--md    padding-x--lg">
+                    <h2>
+                        <a href="{{ .RelPermalink }}" class="anchor">
+                            <span class="text--bg-line--accent">
+                                {{ .Title | markdownify }}
+                            </span>
+                        </a>
+                    </h2>
+                    <p class="font-color-muted   margin-top--sm">
+                        <em>
+                            <small>posted on </small>
+                            <strong>{{ .Date.Format "January 2, 2006" }}</strong>
+                            <small>by</small>
+                            <strong>{{ .Page.Params.author }}</strong>
+                        </em>
+                    </p>
+                    {{ .Summary | markdownify }}
+                </li>
+                {{ end }}
+            </ul>
+            <a href="/posts/" class="anchor--button">Read more of my blog</a>
+        </div>
+        <div class="flex-container     card     bg-main    padding--lg    measure--md">
+            <div class="flex-item   position-relative">
+                <h1>About me</h1>
                 <p>
-                    I am a freelance web designer and developer specializing in fast, accessible, and mobile-friendly websites.
+                    I began developing the web during an undergraduate class on human factors.
                 </p>
                 <p>
-                    I am currently available to work on new projects. 
+                    This class taught me the basics of HTML & CSS and, more importantly, stressed the need for accessible, semantic websites for users, clients, and developers.
                 </p>
-                <a href="#contact" class="anchor--button">Hire me!</a>
-            </div>
-            <div class="">
-                <h1>
-                    <span class="text--bg-line--primary">
-                        My latest projects
-                    </span>
-                </h1>
-                <div class="flex-container">
-                    {{ range first 2 (where .Pages "Section" "portfolio").ByDate.Reverse }}
-                    <div class="flex-item   measure--md    padding-x--lg">
-                        <h2 class="">
-                            <a href="{{ .Params.link }}" class="anchor" rel="noreferrer" target="_blank">
-                                <span class="text--bg-line--accent">
-                                    {{ .Title }}
-                                </span>
-                            </a>
-                        </h2>
-                        <figure class="">
-                            <a href="{{ .Params.link }}" class="" rel="noreferrer" target="_blank">
-                                <img src="{{ .Params.image.source }}" alt="{{ .Params.image.alt }}" class="card" width="100%">
-                            </a>
-                            <figcatpion>
-                                {{ .Summary }}
-                            </figcatpion>
-                        </figure>
-                    </div>
-                    {{ end }}
-                </div>
-                <a href="/portfolio/" class="anchor--button">View my full portfolio</a>
-            </div>
-            <div>
-                <h1>
-                    <span class="text--bg-line--primary">
-                        Latest posts
-                    </span>
-                </h1>
-                <ul class="list-group   flex-container">
-                    {{ range first 2 (where .Pages "Section" "posts").ByPublishDate.Reverse }}
-                    <li class="flex-item   measure--md    padding-x--lg">
-                        <h2>
-                            <a href="{{ .RelPermalink }}" class="anchor">
-                                <span class="text--bg-line--accent">
-                                    {{ .Title | markdownify }}
-                                </span>
-                            </a>
-                        </h2>
-                        <p class="font-color-muted   margin-top--sm">
-                            <em>
-                                <small>posted on </small>
-                                <strong>{{ .Date.Format "January 2, 2006" }}</strong>
-                                <small>by</small>
-                                <strong>{{ .Page.Params.author }}</strong>
-                            </em>
-                        </p>
-                        {{ .Summary | markdownify }}
-                    </li>
-                    {{ end }}
-                </ul>
-                <a href="/posts/" class="anchor--button">Read more of my blog</a>
-            </div>
-            <div class="flex-container     card     bg-main    padding--lg    measure--md">
-                <div class="flex-item   position-relative">
-                    <h1>About me</h1>
-                    <p>
-                        I began developing the web during an undergraduate class on human factors.
-                    </p>
-                    <p>
-                        This class taught me the basics of HTML & CSS and, more importantly, stressed the need for accessible, semantic websites for users, clients, and developers.
-                    </p>
-                    <p>
-                        I am queer and trans and love working with other queer and trans folks, as well as POC, sex workers, and activists.
-                    </p>
-                    <h2 class="h2">My skills</h2>
-                    <p>
-                        I am familiar with
-                    </p>
-                    <ul class="">
-                        <li class="">Advanced HTML & CSS/SCSS</li>
-                        <li class="">Static site generators such as:</li>
+                <p>
+                    I am queer and trans and love working with other queer and trans folks, as well as POC, sex workers, and activists.
+                </p>
+                <h2 class="h2">My skills</h2>
+                <p>
+                    I am familiar with
+                </p>
+                <ul class="">
+                    <li class="">Advanced HTML & CSS/SCSS</li>
+                    <li class="">Static site generators such as:</li>
+                    <li>
                         <ul>
                             <li>Jekyll</li>
                             <li>Hugo</li>
                             <li>Eleventy</li>
                         </ul>
-                        <li class="">Crafting content, including:</li>
+                    </li>
+                    
+                    <li class="">Crafting content, including:</li>
+                    <li>
                         <ul>
                             <li>Writing</li>
                             <li>Basic graphic & logo design</li>
                             <li>Color-schemes & typography</li>
                         </ul>
-                        <li class="">Vanilla Javascript</li>
-                    </ul>
-                    <p>
-                        Please <a href="#contact" class="anchor">contact me</a> if you'd like to hire me to work on a project.
-                    </p>
-                    <figure class="card__border-image">
-                        <img src="/assets/images/head-shot.jpeg" class="thumb" width="100%" alt="A head shot of Laura.">
-                    </figure>
-                </div>
+                        
+                    </li>
+                    <li class="">Vanilla Javascript</li>
+                </ul>
+                <p>
+                    Please <a href="#contact" class="anchor">contact me</a> if you'd like to hire me to work on a project.
+                </p>
+                <figure class="card__border-image">
+                    <img src="/assets/images/head-shot.jpeg" class="thumb" width="100%" alt="A head shot of Laura.">
+                </figure>
             </div>
-        {{ partial "sidebar.html" . }}
         </div>
+        {{ partial "sidebar.html" . }}
+    </div>
 </section>
 {{ end }}

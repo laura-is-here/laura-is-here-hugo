@@ -60,9 +60,9 @@
   --slate-700: hsla(240, 30%, 60%, 100%);
   --slate-800: hsla(240, 30%, 65%, 100%);
   --slate-900: hsla(240, 30%, 70%, 100%);
-  --theme-color: hsla(var(--main-hue), 65%, 75%, 100%);
+  --theme-color: hsla(var(--main-hue), 65%, 85%, 100%);
   --theme-color-muted: hsla(var(--main-hue), 65%, 35%, 100%);
-  --accent-color: hsla(var(--accent-hue), 60%, 70%, 100%);
+  --accent-color: hsla(var(--accent-hue), 60%, 60%, 100%);
   --accent-color-muted: hsla(var(--accent-hue), 60%, 60%, 100%);
   --background-color: hsla(var(--main-hue), 2%, 92%, 100%);
   --font-color: hsla(var(--main-hue), 15%, 30%, 100%);
@@ -122,7 +122,7 @@
   --slate-900: hsla(240, 30%, 70%, 100%);
   --theme-color: hsla(var(--main-hue), 64%, 33%, 100%);
   --theme-color-muted: hsla(var(--main-hue), 64%, 23%, 100%);
-  --accent-color: hsla(var(--accent-hue), 77%, 43%, 100%);
+  --accent-color: hsla(var(--accent-hue), 77%, 33%, 100%);
   --accent-color-muted: var(--pink-300);
   --accent-color-muted: hsla(var(--accent-hue), 77%, 33%, 100%);
   --background-color: hsla(var(--main-hue), 15%, 15%, 100%);
@@ -323,13 +323,13 @@ a {
     color: var(--main-bg);
     background-color: var(--theme-color);
     
-    .text--bg-line--accent {
+    .text--bg-line--accent, .text--bg-line--primary {
       &:before {
         top: initial;
         bottom: 0;
         left: initial;
         right: 0.75rem;
-        width: 25%;
+        width: 0;
       }
     }
   }
@@ -615,7 +615,6 @@ button, .anchor--button {
   
   &:hover,
   &:active {
-    color: var(--accent-color);
     border-bottom: 4px solid var(--accent-color);
     --theme-color: transparent;
   }
@@ -643,8 +642,6 @@ footer {
 /* ------------------------------ $UTILITIES */
 
 .active {
-  --font-color: var(--accent-color);
-  --font-color-muted: var(--accent-color);
   border-bottom: 4px solid var(--accent-color);
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
